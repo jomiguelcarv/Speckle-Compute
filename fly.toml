@@ -1,9 +1,9 @@
-# fly.toml app configuration file generated for speckle-compute-25-empty-sun-5253 on 2025-03-14T23:05:07+01:00
+# fly.toml app configuration file generated for speckle-compute-25-white-meadow-9939 on 2025-03-04T10:57:29Z
 #
 # See https://fly.io/docs/reference/configuration/ for information about how to use this file.
 #
 
-app = 'speckle-compute-25-empty-sun-5253'
+app = 'speckle-compute-lingering-wind-7135'
 primary_region = 'iad'
 kill_signal = 'SIGUSR1'
 kill_timeout = '5m0s'

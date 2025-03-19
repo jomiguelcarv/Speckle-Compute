@@ -7,10 +7,9 @@ def send_to_compute():
     #Credentials
     compute_rhino3d.Util.url = "http://3.78.144.62/"
     compute_rhino3d.Util.apiKey = "SpeckleCompute02"
-    send_to_compute_stream = "https://macad.speckle.xyz/streams/28a211b286/models/c6a5549e3b" #check for stream or projects??
-    sendModel_to_compute_stream = "https://macad.speckle.xyz/streams/28a211b286/models/4e98b63e56" 
-    receive_from_compute_stream = "https://macad.speckle.xyz/streams/28a211b286/models/f2dd4b4cca" #check for stream or projects??
-    gh_definition = "HyperB_Data_GH_Residential-metrics_RA.ghx"
+    send_to_compute_stream = "https://macad.speckle.xyz/streams/9eac0da6e3"
+    receive_from_compute_stream = "https://macad.speckle.xyz/streams/75b66d6c2d"
+    gh_definition = "example.ghx"
 
     gh_data = open(gh_definition, mode="r", encoding="utf-8-sig").read()
     data_bytes = gh_data.encode("utf-8")
@@ -22,23 +21,12 @@ def send_to_compute():
         "pointer": None,
         "values": [
             {
-                "ParamName": "RH_IN:SendData",
+                "ParamName": "RH_IN:Send",
                 "InnerTree": {
                     "{ 0; }": [
                         {
                             "type": "String",
                             "data": send_to_compute_stream
-                        }
-                    ]
-                }
-            }, 
-                        {
-                "ParamName": "RH_IN:SendGeo",
-                "InnerTree": {
-                    "{ 0; }": [
-                        {
-                            "type": "String",
-                            "data": sendModel_to_compute_stream
                         }
                     ]
                 }
