@@ -3,7 +3,7 @@
 # See https://fly.io/docs/reference/configuration/ for information about how to use this file.
 #
 
-app = 'speckle-compute-25'
+app = 'speckle-compute-lingering-wind-7135'
 primary_region = 'iad'
 kill_signal = 'SIGUSR1'
 kill_timeout = '5m0s'
